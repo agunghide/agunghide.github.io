@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" lang="id-ID">
+    <meta charset="utf-8">
+    <!-- ini untuk menambahkan fitur viewport atau pendeteksi terhadap jenis device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan SASS</title>
+    <title>Login Page Coba</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <div class="sidebar">
-                Ini side bar
-            </div>
-            <div class="main-content">
-                <div class="main">
-                    <p>Dahulu kala ada seorang kampret</p>
-                </div>
-            </div>
-        </div>
+    <div class="p-10">
+        <table class="center">gi
+            <caption>
+                <h1>Login Panel</h1>
+            </caption>
+            <tr>
+                <td>Username : </td>
+                <td> <input type="text" placeholder="Username"> </td>
+            </tr>
+
+            <tr>
+                <td>password : </td>
+                <td>
+                    <input id="password" type="password" placeholder="Password">
+                    <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button type="button" class="btn">Login</button>
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+    $(".toggle-password").click(function () {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+</script>
 
-</html>
+<html>
