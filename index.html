@@ -6,38 +6,76 @@
     <!-- ini untuk menambahkan fitur viewport atau pendeteksi terhadap jenis device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page Coba</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    <link href="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/css/compiled-4.17.0.min.css?ver=4.17.0"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="p-10">
-        <table class="center">gi
-            <caption>
-                <h1>Login Panel</h1>
-            </caption>
-            <tr>
-                <td>Username : </td>
-                <td> <input type="text" placeholder="Username"> </td>
-            </tr>
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center mx-auto" style="height: 100vh">
+            <form class="text-center border border-light p-5 form-login z-depth-1-half" action="#!">
 
-            <tr>
-                <td>password : </td>
-                <td>
-                    <input id="password" type="password" placeholder="Password">
-                    <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                </td>
-            </tr>
+                <p class="h4 mb-4">Sign in</p>
+                <!-- Email -->
+                <div class="md-form">
+                    <i class="fas fa-envelope prefix d-block"></i>
+                    <input type="email" id="email" class="form-control mb-4">
+                    <label for="email">Email</label>
+                </div>
+                <!-- Password -->
+                <div class="md-form">
+                    <i class="fas fa-lock prefix d-block"></i>
+                    <input type="password" id="password" class="form-control mb-4">
+                    <label for="password">Password</label>
+                </div>
 
-            <tr>
-                <td colspan="2">
-                    <button type="button" class="btn">Login</button>
-                </td>
-            </tr>
-        </table>
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <!-- Remember me -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Forgot password -->
+                        <a href="">Forgot password?</a>
+                    </div>
+                </div>
+
+                <!-- Sign in button -->
+                <button class="btn btn-info btn-block my-4 btn-rounded" type="submit">Sign in</button>
+
+                <!-- Register -->
+                <p>Not a member?
+                    <a href="">Register</a>
+                </p>
+            </form>
+        </div>
     </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js">
+</script>
+<!-- MDB core JavaScript -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script> -->
+<!-- <script type="text/javascript"
+    src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/bundles/4.17.0/compiled.0.min.js?ver=4.17.0"> -->
+<script type="text/javascript" src="assets/js/jquery.min.js">
+</script>
 <script>
     $(".toggle-password").click(function () {
         $(this).toggleClass("fa-eye fa-eye-slash");
@@ -50,4 +88,4 @@
     });
 </script>
 
-<html>
+</html>
