@@ -428,8 +428,8 @@ function onEmailInput(e) {
                 ease: Expo.easeOut
             });
             TweenMax.to([mataKiri, mataKanan], 1, {
-                scaleX: 0.75,
-                scaleY: 0.75,
+                scaleX: 0.80,
+                scaleY: 0.80,
                 ease: Expo.easeOut,
                 transformOrigin: "center center"
             });
