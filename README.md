@@ -1,5 +1,4 @@
-# login-animation
-Login with Animation
+# Login SVG Animation
 
 Login dengan animasi yang menarik dengan Javascript dan CSS </br>
 Lihat demo <a href="https://angaihimitsu.github.io/login-animation/">disini</a> </br>
