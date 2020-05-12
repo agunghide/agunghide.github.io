@@ -17,66 +17,247 @@
 
 <body>
     <div class="container">
-        <div class="d-flex align-items-center justify-content-center mx-auto" style="height: 100vh">
-            <form class="text-center border border-light p-5 form-login z-depth-1-half" action="#!">
-
-                <p class="h4 mb-4">Sign in</p>
-                <!-- Email -->
-                <div class="md-form">
-                    <i class="fas fa-envelope prefix d-block"></i>
-                    <input type="email" id="email" class="form-control mb-4">
-                    <label for="email">Email</label>
-                </div>
-                <!-- Password -->
-                <div class="md-form">
-                    <i class="fas fa-lock prefix d-block"></i>
-                    <input type="password" id="password" class="form-control mb-4">
-                    <label for="password">Password</label>
-                    <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                </div>
-
-                <div class="d-flex justify-content-around">
+        <div class="d-flex align-items-center justify-content-center mx-auto" style="height: 100vh;top:-30px">
+            <div style="margin-top:-6rem;">
+                <div class="svgContainer">
                     <div>
-                        <!-- Remember me -->
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                        <svg version="1.1" class="mySVG" viewBox="0 -4 200 200">
+                            <!-- <g xmlns="http://www.w3.org/2000/svg" id="Layer_x0020_1"> -->
+                            <g class="badan">
+                                <path class="badanLuar" fill="#334F55"
+                                    d="M128.78 93.9l0 -44.27c0,-27.37 -22.28,-49.63 -49.65,-49.63l-29.48 0c-27.38,0 -49.65,22.26 -49.65,49.63l0 44.27 128.78 0z" />
+                                <path class="badanDalam" fill="#E6D764"
+                                    d="M120.73 93.9l-0.46 0 -10.27 0 -5.37 0 -13.41 0 -5.37 0 -42.92 0 -5.37 0 -13.41 0 -5.37 0 -9.4 0 -1.33 0 -0.91 0 -1.77 0 0 -44.27c0,-24.41 19.86,-44.26 44.28,-44.26l29.48 0c24.41,0 44.28,19.85 44.28,44.26l0 44.27 -2.68 0 0 0z" />
+                                <path class="badanLuarBiasa"  style="display:none" fill="#334F55"
+                                    d="M128.78 93.9l0 -44.27c0,-27.37 -22.28,-49.63 -49.65,-49.63l-29.48 0c-27.38,0 -49.65,22.26 -49.65,49.63l0 44.27 128.78 0z" />
+                                <path class="badanDalamBiasa" style="display:none" fill="#E6D764"
+                                    d="M120.73 93.9l-0.46 0 -10.27 0 -5.37 0 -13.41 0 -5.37 0 -42.92 0 -5.37 0 -13.41 0 -5.37 0 -9.4 0 -1.33 0 -0.91 0 -1.77 0 0 -44.27c0,-24.41 19.86,-44.26 44.28,-44.26l29.48 0c24.41,0 44.28,19.85 44.28,44.26l0 44.27 -2.68 0 0 0z" />
+                                <path class="badanLuarIntip" style="display:none" fill="#334F55"
+                                    d="M127.65 96.2l0 -43.88c0,-27.13 -21.79,-52.32 -48.93,-52.32l-29.22 0c-27.14,0 -49.5,25.19 -49.5,52.32l0 43.88 127.65 0z" />
+                                <path class="badanDalamIntip" style="display:none" fill="#E6D764"
+                                    d="M119.67 96.2l-0.45 0 -10.19 0 -5.31 0 -13.3 0 -5.32 0 -42.55 0 -5.32 0 -13.29 0 -5.32 0 -9.33 0 -1.31 0 -0.9 0 -1.76 0 0 -43.88c0,-24.19 19.98,-47 44.18,-47l29.22 0c24.2,0 43.61,22.81 43.61,47l0 43.88 -2.66 0 0 0z" />
+                            </g>
+                            <g class="mata">
+                                <g class="mataKiri">
+                                    <circle cx="38.5" cy="41.5" r="3.5" fill="#334F55" />
+                                    <circle cx="37" cy="39" r="1" fill="#fff" />
+                                </g>
+                                <g class="mataKanan">
+                                    <circle cx="90.5" cy="41.5" r="3.5" fill="#334F55" />
+                                    <circle cx="89" cy="39" r="1" fill="#fff" />
+                                </g>
+                            </g>
+                            <defs>
+                                <path id="bentukMulut" d="M65.62 63.5c6.2,-0.26 8.53,-5.87 9.36,-4.35 0.83,1.51 -3.42,5.89 -9.36,6.06
+                                        -5.94,0.18 -9.91,-4.07 -9.21,-5.93 0.7,-1.86 3.01,4.48 9.21,4.22z" />
+                            </defs>
+                            <clipPath id="ukuranMulut">
+                                <use xlink:href="#bentukMulut" overflow="visible" />
+                            </clipPath>
+                            <g class="mulut">
+                                <g>
+                                    <path class="mulutBiasa" fill="#CCCCCC" d="M65.62 63.5c6.2,-0.26 8.53,-5.87 9.36,-4.35 0.83,1.51 -3.42,5.89
+                                            -9.36,6.06 -5.94,0.18 -9.91,-4.07 -9.21,-5.93 0.7,-1.86 3.01,4.48
+                                            9.21,4.22z" />
+                                    <path class="mulutBulat" style="display:none" fill="#CCCCCC"
+                                        d="M64.92 57.66c2.31,-0.25 3.2,1.7 3.27,3.21 0.06,1.51 -0.85,3.13 -3.34,3.22 -2.48,0.09 -3.21,-1.28 -3.11,-3.29 0.1,-2.02 0.86,-2.89 3.18,-3.14z" />
+                                    <path class="mulutKecil" style="display:none" fill="#CCCCCC" d="M65.62 63.5c6.2,-0.26 8.53,-5.87 9.36,-4.35 0.83,1.51 -3.42,5.89
+                                            -9.36,6.06 -5.94,0.18 -9.91,-4.07 -9.21,-5.93 0.7,-1.86 3.01,4.48
+                                            9.21,4.22z" />
+                                    <path class="mulutSedang" style="display:none" fill="#CCCCCC" d="M65.97 53.51c4.29,0.16 8.92,0.53 9.1,4.12 0.17,3.59 -3.42,8.65 -9.37,8.83
+                                            -5.94,0.18 -9.23,-5.45 -9.23,-8.69 0,-3.24 5.2,-4.41 9.5,-4.26z" />
+                                    <path class="mulutBesar" style="display:none" fill="#CCCCCC" d="M64.19 49.93c4.07,0 12.49,0.56 12.67,4.05 0.17,3.5 -5.6,11.8 -12.67,11.72
+                                        -7.07,-0.09 -12.07,-8.99 -12.07,-12.15 0,-3.15 8,-3.62 12.07,-3.62z" />
+                                </g>
+                                <g>
+                                </g>
+                                <g id="lidah" clip-path="url(#ukuranMulut)">
+                                    <g>
+                                        <g>
+                                            <g class="lidah">
+                                                <ellipse fill="#F23F3F" cx="64.1" cy="65.87" rx="7.68" ry="7.25" />
+                                                <ellipse fill="#F07373" cx="64.1" cy="60.08" rx="2.85" ry="1.25" />
+                                            </g>
+                                            <polygon class="taring" fill="#F7F7F7"
+                                                points="72.44,51.7 69.31,50.97 70.05,55.01 " />
+                                        </g>
+                                    </g>
+                                </g>
+                                <path class="garisBibir" fill="none" stroke="#334F55" stroke-width="2.02"
+                                    stroke-linejoin="round" stroke-miterlimit="22.9256" d="M65.62 63.5c6.2,-0.26 8.53,-5.87 9.36,-4.35 0.83,1.51 -3.42,5.89 -9.36,6.06
+                                        -5.94,0.18 -9.91,-4.07 -9.21,-5.93 0.7,-1.86 3.01,4.48 9.21,4.22z" />
+                                <!-- <polygon class="gigiLuar" xmlns="http://www.w3.org/2000/svg" fill="white"
+                                        points="73.94,60.57 74.64,59.97 74.32,61.94 " /> -->
+                            </g>
+                            <g class="tangan">
+                                <g class="tanganKiri">
+                                    <path class="tgnKiriDalam" fill="#E6D764"
+                                        d="M24.16 77.78l13.4 0 0 20.21c-0.07,3.83 -3.07,6.62 -6.68,6.64 -3.64,0.02 -6.79,-3.08 -6.73,-6.64l0.01 -20.21z" />
+                                    <path class="tgnKiriLuar" fill="#334F55"
+                                        d="M18.76 77.78l5.4 0 -0.01 20.21c-0.06,3.56 3.09,6.66 6.73,6.64 3.61,-0.02 6.61,-2.81 6.68,-6.64l0 -20.21 5.37 0 -0.14 21.48c-0.78,6.47 -5.98,10.64 -11.94,10.73 -7.05,-0.13 -11.4,-5.48 -11.93,-10.73l-0.16 -21.48z" />
+
+                                    <path class="tgnKiriDalamBuka" style="display:none" fill="#E6D764"
+                                        d="M24.16 77.78l13.4 0 0 20.21c-0.07,3.83 -3.07,6.62 -6.68,6.64 -3.64,0.02 -6.79,-3.08 -6.73,-6.64l0.01 -20.21z" />
+                                    <path class="tgnKiriLuarBuka" style="display:none" fill="#334F55"
+                                        d="M18.76 77.78l5.4 0 -0.01 20.21c-0.06,3.56 3.09,6.66 6.73,6.64 3.61,-0.02 6.61,-2.81 6.68,-6.64l0 -20.21 5.37 0 -0.14 21.48c-0.78,6.47 -5.98,10.64 -11.94,10.73 -7.05,-0.13 -11.4,-5.48 -11.93,-10.73l-0.16 -21.48z" />
+
+                                    <path class="tgnKiriDalamIntip" style="display:none" fill="#E6D764"
+                                        d="M23.95 77.1l13.29 0 -0.05 -24.08c-0.07,-3.79 -3.04,-6.56 -6.63,-6.57 -3.6,-0.02 -6.72,3.05 -6.67,6.57l0.06 24.08z" />
+                                    <path class="tgnKiriLuarIntip" style="display:none" fill="#334F55"
+                                        d="M18.6 77.1l5.35 0 -0.06 -24.08c-0.05,-3.52 3.07,-6.59 6.67,-6.57 3.59,0.01 6.56,2.78 6.63,6.57l0.05 24.08 5.31 0 -0.18 -25.34c-0.77,-6.4 -5.93,-10.54 -11.83,-10.63 -7,0.13 -11.3,5.43 -11.83,10.63l-0.11 25.34z" />
+
+                                    <path class="tgnKiriDalamKecil" style="display:none" fill="#E6D764"
+                                        d="M23.62 79.74l13.09 0 -0.03 15.96c-0.06,3.74 -2.99,6.46 -6.53,6.48 -3.54,0.02 -6.62,-3.01 -6.57,-6.48l0.04 -15.96z" />
+                                    <path class="tgnKiriLuarKecil" style="display:none" fill="#334F55"
+                                        d="M18.35 79.74l5.27 0 -0.04 15.96c-0.05,3.47 3.03,6.5 6.57,6.48 3.54,-0.02 6.47,-2.74 6.53,-6.48l0.03 -15.96 5.24 0 -0.16 17.2c-0.76,6.31 -5.84,10.39 -11.66,10.48 -6.89,-0.13 -11.14,-5.36 -11.66,-10.48l-0.12 -17.2z" />
+
+                                    <path class="tgnKiriDalamTutupLurus" style="display:none" fill="#E6D764"
+                                        d="M23.95 77.1l13.29 0 -0.01 -33.75c-0.06,-3.79 -3.04,-6.56 -6.62,-6.58 -3.6,-0.02 -6.73,3.06 -6.67,6.58l0.01 33.75z" />
+                                    <path class="tgnKiriLuarTutupLurus" style="display:none" fill="#334F55" d="M18.6 77.1l5.35 0 -0.01 -33.75c-0.06,-3.52 3.07,-6.6 6.67,-6.58 3.58,0.02
+                                            6.56,2.79 6.62,6.58l0.01 33.75 5.31 0 -0.13 -35.01c-0.77,-6.41 -5.93,-10.54
+                                            -11.84,-10.64 -6.99,0.14 -11.3,5.44 -11.83,10.64l-0.15 35.01z" />
+
+                                    <path class="tgnKiriDalamTutupKecilBawah" style="display:none" fill="#E6D764" d="M24.15 73.97l13.41 0 0.03 -1.55c-0.07,3.83 -3.31,1.51 -6.92,1.53
+                                            -3.64,0.02 -6.54,2.02 -6.49,-1.53l-0.03 1.55z" />
+                                    <path class="tgnKiriLuarTutupKecilBawah" style="display:none" fill="#334F55" d="M18.76 73.97l5.39 0 0 0c0.38,0.59 2.88,0 6.52,-0.02 3.61,-0.02 6.85,0.27
+                                            6.89,0.02l0 0 5.36 0 -0.1 -0.28c-0.78,6.46 -6.22,5.53 -12.18,5.63
+                                            -7.05,-0.14 -11.16,-0.39 -11.69,-5.63l-0.19 0.28z" />
+
+                                    <path class="tgnKiriDalamTutupKecil" style="display:none" fill="#E6D764" d="M24.15 77.77l13.41 0 0.03 1.55c-0.07,-3.83 -3.31,-1.52 -6.92,-1.53
+                                            -3.64,-0.02 -6.54,-2.03 -6.49,1.53l-0.03 -1.55z" />
+                                    <path class="tgnKiriLuarTutupKecil" style="display:none" fill="#334F55"
+                                        d="M18.76 77.77l5.39 0 0 0c0.38,-0.59 2.88,0 6.52,0.02 3.61,0.01 6.85,-0.27 6.89,-0.02l0 0 5.36 0 -0.1 0.28c-0.78,-6.47 -6.22,-5.54 -12.18,-5.63 -7.05,0.13 -11.16,0.38 -11.69,5.63l-0.19 -0.28z" />
+
+                                </g>
+                                <g class="tanganKanan">
+                                    <path class="tgnKananDalam" fill="#E6D764"
+                                        d="M104.62 77.8l-13.41 0 0.01 20.21c0.06,3.83 3.06,6.62 6.68,6.64 3.63,0.01 6.78,-3.09 6.73,-6.64l-0.01 -20.21z" />
+                                    <path class="tgnKananLuar" fill="#334F55"
+                                        d="M110.01 77.8l-5.39 0 0.01 20.21c0.05,3.55 -3.1,6.65 -6.73,6.64 -3.62,-0.02 -6.62,-2.81 -6.68,-6.64l-0.01 -20.21 -5.36 0 0.14 21.48c0.77,6.46 5.98,10.64 11.93,10.73 7.06,-0.13 11.41,-5.48 11.94,-10.73l0.15 -21.48z" />
+
+                                    <path class="tgnKananDalamKecil" style="display:none" fill="#E6D764"
+                                        d="M102.2 79.76l-13.1 0 -0.02 15.96c0.07,3.74 3,6.46 6.53,6.48 3.55,0.02 6.62,-3.01 6.57,-6.48l0.02 -15.96z" />
+                                    <path class="tgnKananLuarKecil" style="display:none" fill="#334F55"
+                                        d="M107.47 79.76l-5.27 0 -0.02 15.96c0.05,3.47 -3.02,6.5 -6.57,6.48 -3.53,-0.02 -6.46,-2.74 -6.53,-6.48l0.02 -15.96 -5.23 0 0.11 17.2c0.75,6.31 5.84,10.39 11.65,10.48 1.8,-0.04 3.41,-0.41 4.83,-1.05 4.02,-1.79 6.45,-5.64 6.83,-9.43l0.18 -17.2z" />
+
+                                    <path class="tgnKananDalamIntip" style="display:none" fill="#E6D764"
+                                        d="M103.71 77.08l-13.29 0 -0.04 -24.08c0.06,-3.79 3.04,-6.55 6.62,-6.57 3.6,-0.02 6.73,3.05 6.67,6.57l0.04 24.08z" />
+                                    <path class="tgnKananLuarIntip" style="display:none" fill="#334F55"
+                                        d="M109.05 77.08l-5.34 0 -0.04 -23.11c0.06,-3.52 -3.07,-6.6 -6.67,-6.58 -3.58,0.02 -6.56,2.79 -6.62,6.58l0.04 23.11 -5.32 0 0.09 -24.37c0.77,-6.41 5.93,-10.54 11.84,-10.64 6.99,0.14 11.3,5.44 11.83,10.64l0.19 24.37z" />
+
+                                    <path class="tgnKananDalamBuka" style="display:none" fill="#E6D764"
+                                        d="M104.62 77.8l-13.41 0 0.01 20.21c0.06,3.83 3.06,6.62 6.68,6.64 3.63,0.01 6.78,-3.09 6.73,-6.64l-0.01 -20.21z" />
+                                    <path class="tgnKananLuarBuka" style="display:none" fill="#334F55"
+                                        d="M110.01 77.8l-5.39 0 0.01 20.21c0.05,3.55 -3.1,6.65 -6.73,6.64 -3.62,-0.02 -6.62,-2.81 -6.68,-6.64l-0.01 -20.21 -5.36 0 0.14 21.48c0.77,6.46 5.98,10.64 11.93,10.73 7.06,-0.13 11.41,-5.48 11.94,-10.73l0.15 -21.48z" />
+
+                                    <path class="tgnKananDalamTutupLurus" style="display:none" fill="#E6D764"
+                                        d="M103.71 77.08l-13.29 0 0 -33.75c0.07,-3.79 3.04,-6.56 6.63,-6.58 3.6,-0.02 6.72,3.06 6.67,6.58l-0.01 33.75z" />
+                                    <path class="tgnKananLuarTutupLurus" style="display:none" fill="#334F55"
+                                        d="M109.05 77.08l-5.34 0 0.01 -33.75c0.05,-3.52 -3.07,-6.6 -6.67,-6.58 -3.59,0.02 -6.56,2.79 -6.63,6.58l0 33.75 -5.32 0 0.14 -35.01c0.77,-6.4 5.93,-10.54 11.83,-10.64 6.99,0.14 11.3,5.44 11.83,10.64l0.15 35.01z" />
+
+                                    <path class="tgnKananDalamTutupKecilBawah" style="display:none" fill="#E6D764" d="M104.6 73.99l-13.4 0 0.04 -1.55c0.06,3.82 3.04,1.25 6.66,1.27 3.63,0.02
+                                            6.8,2.28 6.74,-1.27l-0.04 1.55z" />
+                                    <path class="tgnKananLuarTutupKecilBawah" style="display:none" fill="#334F55" d="M109.99 73.99l-5.39 0 0 0c-0.02,0.49 -3.07,-0.26 -6.7,-0.28 -3.62,-0.02
+                                            -6.33,0.28 -6.7,0.28l0 0 -5.37 0 0.18 -0.28c0.77,6.46 5.95,5.27 11.91,5.36
+                                            7.05,-0.13 11.42,-0.12 11.96,-5.36l0.11 0.28z" />
+
+                                    <path class="tgnKananDalamTutupKecil" style="display:none" fill="#E6D764" d="M104.6 77.75l-13.4 0 0.04 1.55c0.06,-3.83 3.04,-1.25 6.66,-1.27
+                                            3.63,-0.02 6.8,-2.29 6.74,1.27l-0.04 -1.55z" />
+                                    <path class="tgnKananLuarTutupKecil" style="display:none" fill="#334F55" d="M109.99 77.75l-5.39 0 0 0c-0.02,-0.49 -3.07,0.26 -6.7,0.28 -3.62,0.02
+                                            -6.33,-0.28 -6.7,-0.28l0 0 -5.37 0 0.18 0.28c0.77,-6.46 5.95,-5.27
+                                            11.91,-5.37 7.05,0.14 11.42,0.12 11.96,5.37l0.11 -0.28z" />
+
+                                </g>
+                            </g>
+                            <!-- </g> -->
+                        </svg>
+                        <!-- <svg version="1.1" class="mySVG" viewBox="0 0 200 200">
+                            <g xmlns="http://www.w3.org/2000/svg" id="Layer_x0020_1">
+                                <g id="_2378959474144">
+                                    <path fill="#334F55"
+                                        d="M164.72 108.78l0 -51.28c0,-31.71 -25.8,-57.5 -57.52,-57.5l-34.15 0c-31.71,0 -57.51,25.79 -57.51,57.5l0 51.28 -15.54 0 0 6.21 18.65 0 6.21 0 12.59 0c0.78,6.98 6.65,12.43 13.83,12.43 7.18,0 13.05,-5.45 13.83,-12.43l50.04 0c0.78,6.98 6.65,12.43 13.83,12.43 7.18,0 13.05,-5.45 13.83,-12.43l12.59 0 6.21 0 18.65 0 0 -6.21 -15.54 0 0 0z" />
+                                    <path fill="#E6D764"
+                                        d="M155.4 108.78l-12.43 0 0 -18.65 -6.22 0 0 18.65 0 4.67c0,4.28 -3.48,7.76 -7.77,7.76 -4.29,0 -7.77,-3.48 -7.77,-7.76l0 -4.67 0 -18.65 -6.22 0 0 18.65 -49.72 0 0 -18.65 -6.22 0 0 18.65 0 4.67c0,4.28 -3.48,7.76 -7.77,7.76 -4.29,0 -7.77,-3.48 -7.77,-7.76l0 -4.67 0 -18.65 -6.22 0 0 18.65 -12.43 0 -3.1 0 0 -51.28c0,-28.28 23.01,-51.28 51.3,-51.28l34.15 0c28.28,0 51.29,23 51.29,51.28l0 51.28 -3.1 0 0 0z" />
+                                    <g id="mataKiri">
+                                        <circle cx="61.5" cy="48.5" r="3.5" fill="#334F55" />
+                                        <circle cx="60" cy="46" r="1" fill="#fff" />
+                                    </g>
+                                    <g id="mataKanan">
+                                        <circle cx="117.5" cy="48.5" r="3.5" fill="#334F55" />
+                                        <circle cx="116" cy="46" r="1" fill="#fff" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg> -->
+                    </div>
+                </div>
+                <form class="text-center border border-light p-5 form-login z-depth-1-half" action="#!">
+                    <p class="h4 mb-4">Sign in</p>
+                    <!-- Email -->
+                    <div class="md-form">
+                        <i class="fas fa-envelope prefix d-block"></i>
+                        <input type="email" id="emailInput" class="form-control mb-4">
+                        <label for="email">Email</label>
+                    </div>
+                    <!-- Password -->
+
+                    <div class="md-form">
+
+                        <i class="fas fa-lock prefix d-block"></i>
+                        <input type="password" id="passwordInput" class="form-control mb-4">
+                        <label for="password">Password</label>
+                        <input type="checkbox" id="showPasswordCheck">
+                        <span toggle="#passwordInput" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-around">
+                        <div>
+                            <!-- Remember me -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Forgot password -->
+                            <a href="">Forgot password?</a>
                         </div>
                     </div>
-                    <div>
-                        <!-- Forgot password -->
-                        <a href="">Forgot password?</a>
-                    </div>
-                </div>
 
-                <!-- Sign in button -->
-                <button class="btn btn-info btn-block my-4 btn-rounded" type="submit">Sign in</button>
+                    <!-- Sign in button -->
+                    <button class="btn btn-info btn-block my-4 btn-rounded" type="submit">Sign in</button>
 
-                <!-- Register -->
-                <p>Not a member?
-                    <a href="">Register</a>
-                </p>
-            </form>
+                    <!-- Register -->
+                    <p>Not a member?
+                        <a href="">Register</a>
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
 </body>
+<!-- SVG Plugin -->
+<script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="assets/js/MorphSVGPlugin1.min.js">
+</script>
+<script type="text/javascript" src="assets/js/animation.js"></script>
+
 <!-- MDB core JQuery Versi 4.17.00-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"> -->
-</script>
+
 <script>
-    $(".toggle-password").click(function () {
-        $(this).toggleClass("fa-eye fa-eye-slash");
-        var input = $($(this).attr("toggle"));
-        if (input.attr("type") == "password") {
-            input.attr("type", "text");
-        } else {
-            input.attr("type", "password");
-        }
-    });
+    // //Toggle Password
+    // $(".toggle-password").click(function () {
+    //     $(this).toggleClass("fa-eye fa-eye-slash");
+    //     var input = $($(this).attr("toggle"));
+    //     if (input.attr("type") == "password") {
+    //         input.attr("type", "text");
+    //     } else {
+    //         input.attr("type", "password");
+    //     }
+    // });
 </script>
 
 </html>
