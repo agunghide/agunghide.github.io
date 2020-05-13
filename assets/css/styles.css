@@ -11,7 +11,7 @@ body {
     width: 370px !important;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .form-login {
     width: 300px !important;
     padding-left: 2rem !important;
