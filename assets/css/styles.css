@@ -13,13 +13,11 @@ body {
 }
 @media only screen and (max-width: 450px) {
   .form-login {
-    width: 300px !important;
+    width: 330px !important;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
-}
-@media only screen and (max-width: 400px) {
-  .rememberMe {
+  .form-login .rememberMe {
     display: block !important;
   }
 }
