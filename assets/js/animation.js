@@ -135,17 +135,6 @@ function initLoginForm() {
     emailScrollMax = email.scrollWidth;
 
     // check if we're on mobile/tablet, if so then show password initially
-    // if (isMobileDevice()) {
-    //     password.type = "text";
-    //     showPasswordCheck.checked = true;
-    //     TweenMax.set(twoFingers, {
-    //         transformOrigin: "bottom left",
-    //         rotation: 30,
-    //         x: -9,
-    //         y: -2,
-    //         ease: Power2.easeInOut
-    //     });
-    // }
 
     // clear the console
     console.clear();
